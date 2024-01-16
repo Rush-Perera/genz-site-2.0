@@ -78,7 +78,7 @@ const About = () => {
               </p>
               <div>
                 <a
-                  href="#"
+                  href="/projects"
                   className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
                 >
                   <span className="duration-300 group-hover:pr-2">
@@ -165,7 +165,7 @@ const About = () => {
               </p>
               <div>
                 <a
-                  href="#"
+                  href="/packages"
                   className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
                 >
                   <span className="duration-300 group-hover:pr-2">

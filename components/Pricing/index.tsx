@@ -42,21 +42,21 @@ const Pricing = () => {
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
                 Silver Package
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+             {/* <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p> */} 
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                  Free Domain(1Y)
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                  Free Hosting(1Y)
                   </li>
                   <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                  5 Pages
                   </li>
                   <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                  Free Business Email Account
                   </li>
                 </ul>
               </div>
@@ -97,22 +97,24 @@ const Pricing = () => {
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
                 Gold Package
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              {/* <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p> */}
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
+                <ul>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                  Free Domain(1Y)
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
-                  </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                  Free Hosting(1Y)
                   </li>
                   <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                  12 Pages
                   </li>
+                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  Free 2 Business Email Accounts
+                  </li>
+                </ul>
                 </ul>
               </div>
 
@@ -148,21 +150,21 @@ const Pricing = () => {
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
                 Platinum Package
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              {/* <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p> */}
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
-                <ul>
+              <ul>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                  Free Domain(1Y)
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                  Free Hosting(1Y)
                   </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  Unlimited Pages
                   </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  Free 6 Business Email Accounts
                   </li>
                 </ul>
               </div>
