@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Application } from '@splinetool/runtime';
+import Loader from "../Loader";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
@@ -9,6 +10,42 @@ const Hero = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+
+  const [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   // Create a reference to the canvas element
+  //   const canvas = document.getElementById('canvas3d');
+  //   // if (!canvas) {
+  //   //   console.error('Canvas element not found.');
+  //   //   return;
+  //   // }
+  //   // Create a new Spline application
+  //   const app = new Application(canvas as HTMLCanvasElement);
+
+  //   // Set loading to true when starting to load
+  //   setLoading(true);
+
+  //   // Load the Spline scene
+  //   app.load('https://prod.spline.design/hr2t7gA0uOGPMPtu/scene.splinecode')
+  //   // app.load('https://prod.spline.design/YtnYKZlQOmQjUVIM/scene.splinecode')
+  //     .then(() => {
+  //       // Set loading to false when the component has finished loading
+  //       setLoading(false);
+  //     })
+  //     .catch((error) => {
+  //       // Handle any errors during loading
+  //       console.error('Error loading Spline scene:', error);
+  //       // Set loading to false in case of an error
+  //       setLoading(false);
+  //     });
+
+  //   // Cleanup function to destroy the Spline application when the component unmounts
+  //   return () => {
+  //     // app.destroy();
+  //   };
+
+  // }, []);
 
   useEffect(() => {
     // Create a reference to the canvas element
@@ -19,6 +56,8 @@ const Hero = () => {
 
     // Load the Spline scene
     app.load('https://prod.spline.design/YtnYKZlQOmQjUVIM/scene.splinecode');
+    // app.load('https://prod.spline.design/hr2t7gA0uOGPMPtu/scene.splinecode');
+
 
     // Cleanup function to destroy the Spline application when the component unmounts
     return () => {
@@ -34,16 +73,16 @@ const Hero = () => {
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-              Transforming Ideas into Reality 
+                Transforming Ideas into Reality
               </h4>
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
-              Let's Make Your Dream a   {"   "}
+                Let's Make Your Dream a   {"   "}
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">
-                Reality
+                  Reality
                 </span>
               </h1>
               <p>
-              We are a software development company that offers a wide range of solutions for various platforms. Whether you need a web, iOS, Android, desktop, or macOS application, we have the expertise and experience to deliver high-quality products that meet your requirements and expectations.
+                We are a software development company that offers a wide range of solutions for various platforms. Whether you need a web, iOS, Android, desktop, or macOS application, we have the expertise and experience to deliver high-quality products that meet your requirements and expectations.
               </p>
 
               <div className="mt-10">
@@ -107,9 +146,20 @@ const Hero = () => {
                     alt="Hero"
                     fill
                   /> */}
-                 
 
-                 <canvas id="canvas3d"></canvas>
+                    {/* {loading ? (
+                      // Render a loading indicator while the component is loading
+                      <Loader/>
+                    ) : (
+                      // Render your Spline component when it has finished loading
+                      // <canvas id="canvas3d"></canvas>
+                      // <></>
+                    )} */}
+                      <canvas id="canvas3d"></canvas>
+
+                      
+
+                 
 
                 </div>
               </div>

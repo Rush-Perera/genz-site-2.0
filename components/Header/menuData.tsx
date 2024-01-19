@@ -25,49 +25,39 @@ const menuData: Menu[] = [
     newTab: false,
     path: "/packages",
   },
-  // {
-  //   id: 3,
-  //   title: "Pages",
-  //   newTab: false,
-  //   submenu: [
-  //     {
-  //       id: 31,
-  //       title: "Blog Grid",
-  //       newTab: false,
-  //       path: "/blog",
-  //     },
-  //     {
-  //       id: 34,
-  //       title: "Sign In",
-  //       newTab: false,
-  //       path: "/auth/signin",
-  //     },
-  //     {
-  //       id: 35,
-  //       title: "Sign Up",
-  //       newTab: false,
-  //       path: "/auth/signup",
-  //     },
-  //     {
-  //       id: 35,
-  //       title: "Docs",
-  //       newTab: false,
-  //       path: "/docs",
-  //     },
-  //     {
-  //       id: 35.1,
-  //       title: "Support",
-  //       newTab: false,
-  //       path: "/support",
-  //     },
-  //     {
-  //       id: 36,
-  //       title: "404",
-  //       newTab: false,
-  //       path: "/error",
-  //     },
-  //   ],
-  // },
+  {
+    id: 3,
+    title: "Policies",
+    newTab: false,
+    path: "/docs",
+    submenu: [
+      {
+        id: 31,
+        title: "Inroduction",
+        newTab: false,
+        path: "/docs",
+      },
+      {
+        id: 31,
+        title: "Terms and Conditions",
+        newTab: false,
+        path: "/docs/terms-and-conditions",
+      },
+      {
+        id: 34,
+        title: "Privacy Policy",
+        newTab: false,
+        path: "/docs/privacy-policy",
+      },
+      {
+        id: 35,
+        title: "Refund Policy",
+        newTab: false,
+        path: "/docs/refund-policy",
+      },
+      
+    ],
+  },
 
   {
     id: 4,
