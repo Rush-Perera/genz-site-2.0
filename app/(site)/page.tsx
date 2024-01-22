@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     name: "Sudeera Perera",
     url: "https://www.sudeeraperera.com",
   },
+ 
 };
 
 export default function Home() {
