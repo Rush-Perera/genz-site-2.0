@@ -2,7 +2,7 @@
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
 
-const Pricing = () => {
+const Pricing2 = () => {
   return (
     <>
       {/* <!-- ===== Pricing Table Start ===== --> */}
@@ -12,8 +12,8 @@ const Pricing = () => {
           <div className="animate_top mx-auto text-center">
             <SectionHeader
               headerInfo={{
-                title: `WEB SITE PACKAGES`,
-                subtitle: `Packages`,
+                title: `ECOMMERCE PACKAGES`,
+                subtitle: `Ecommerce Packages`,
                 description: `Discover Tailored Website Packages: Elevate your online presence with designs and features crafted for every need. Find the perfect solution to showcase your vision and meet your online goals.`,
               }}
             />
@@ -34,7 +34,7 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                49000{" "}
+                79000{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                 LKR
                 </span>
@@ -52,11 +52,14 @@ const Pricing = () => {
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
                   Free Hosting(1Y)
                   </li>
-                  <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
-                  5 Pages
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  3 Categories
                   </li>
-                  <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
-                  Free 2 Business Email Accounts
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  40 Products
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  Free Business Email Accounts
                   </li>
                 </ul>
               </div>
@@ -89,7 +92,7 @@ const Pricing = () => {
               </div>
 
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                79000{" "}
+                119000{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   LKR
                 </span>
@@ -109,10 +112,13 @@ const Pricing = () => {
                   Free Hosting(1Y)
                   </li>
                   <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
-                  12 Pages
+                  10 Categories
                   </li>
                   <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
-                  Free 5 Business Email Accounts
+                  150 Products
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  Free Business Email Accounts
                   </li>
                 </ul>
                 </ul>
@@ -142,7 +148,7 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                129000{" "}
+                169000{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   LKR
                 </span>
@@ -161,10 +167,13 @@ const Pricing = () => {
                   Free Hosting(1Y)
                   </li>
                   <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
-                  Unlimited Pages
+                  30 Categories
                   </li>
                   <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
-                  Free 10 Business Email Accounts
+                  400 Products
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  Free SMS Gateway
                   </li>
                 </ul>
               </div>
@@ -197,4 +206,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Pricing2;
