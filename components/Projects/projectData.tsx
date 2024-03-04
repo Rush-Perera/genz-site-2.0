@@ -66,6 +66,33 @@ const ProjectData: Blog[] = [
   },
   {
     _id: 2,
+    mainImage: "/images/projects/jiat.png",
+    title: "Official Website of Java Institute for Advanced Technology",
+    metadata:
+      "Official web site of Java Institute for Advanced Technology ",
+      status: "Collaboration",
+      link: "https://javainstitute.edu.lk",
+  },
+  {
+    _id: 2,
+    mainImage: "/images/projects/eng.png",
+    title: "Faculty of Engineering - University of Ruhuna",
+    metadata:
+      "Official web site of Faculty of Engineering - University of Ruhuna",
+      status: "Ongoing",
+      link: "https://www.eng.ruh.ac.lk/dmme/",
+  },
+  {
+    _id: 2,
+    mainImage: "/images/projects/jcc.png",
+    title: "Jayakodi Cost Consultatnts (Pvt) Ltd",
+    metadata:
+      "Official web site of Jayakodi Cost Consultatnts (Pvt) Ltd",
+      status: "Ongoing",
+      link: "https://jccsl.com",
+  },
+  {
+    _id: 2,
     mainImage: "/images/projects/techno.png",
     title: "Techno - Faculty of Engineering - University of Ruhuna",
     metadata:

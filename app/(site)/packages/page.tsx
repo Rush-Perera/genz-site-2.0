@@ -1,4 +1,5 @@
 import Pricing from "@/components/Pricing";
+import Pricing2 from "@/components/Pricing2";
 import SidebarLink from "@/components/Pricing";
 import { Metadata } from "next";
 
@@ -13,6 +14,11 @@ export default function Packages() {
     <>
       <div className="mt-6 pt-5">
       <Pricing />
+      
+      </div>
+      <div className="mt-6 pt-5">
+      <Pricing2 />
+      
       </div>
       
     </>
