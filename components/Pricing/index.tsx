@@ -90,7 +90,7 @@ USD
 
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">269{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
-                  LKR
+                  USD
                 </span>
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
