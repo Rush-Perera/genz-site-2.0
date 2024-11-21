@@ -55,7 +55,8 @@ const Hero = () => {
     const app = new Application(canvas as HTMLCanvasElement);
 
     // Load the Spline scene
-    app.load('https://prod.spline.design/YtnYKZlQOmQjUVIM/scene.splinecode');
+    app.load('https://prod.spline.design/HIVeERpRPziNjvii/scene.splinecode');
+    // app.load('https://prod.spline.design/YtnYKZlQOmQjUVIM/scene.splinecode');
     // app.load('https://prod.spline.design/hr2t7gA0uOGPMPtu/scene.splinecode');
 
 
