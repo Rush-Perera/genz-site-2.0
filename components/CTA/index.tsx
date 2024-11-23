@@ -29,7 +29,7 @@ const CTA = () => {
               className="animate_left md:w-[70%] lg:w-1/2"
             >
               <h2 className="mb-4 w-11/12 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle4">
-                Contact Us Today to Get Started your Project
+                Do you have a custom requirement?
               </h2>
               <p>
                 Contact Us via our email or hotline to get a free consultation on your idea and get started with your project.
