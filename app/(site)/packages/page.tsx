@@ -2,6 +2,7 @@ import Pricing from "@/components/Pricing";
 import Pricing2 from "@/components/Pricing2";
 import SidebarLink from "@/components/Pricing";
 import { Metadata } from "next";
+import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {
   title: "Packages - GENZ Technologies",
@@ -20,6 +21,11 @@ export default function Packages() {
       <Pricing2 />
       
       </div>
+      <div className="mt-6 pt-5">
+      <CTA />
+      
+      </div>
+      
       
     </>
   );
