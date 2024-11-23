@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-99999 w-full py-7 ${
+      className={`fixed left-0 top-0 z-99999 w-full py-2 000 LKR
         stickyMenu
           ? "bg-white !py-4 shadow transition duration-100 dark:bg-black"
           : ""
@@ -163,7 +163,7 @@ const Header = () => {
             >
                 <FiPhone size={20} className="mr-2" /> {/* Add phone icon before the number */}
 
-              0717 030405
+              +94 717 030405
             </Link>
           </div>
         </div>
