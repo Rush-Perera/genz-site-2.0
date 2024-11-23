@@ -21,7 +21,7 @@ export default function Packages() {
       <Pricing2 />
       
       </div>
-      <div className="mt-6 pt-5">
+      <div className="mt-1 pt-1">
       <CTA />
       
       </div>
