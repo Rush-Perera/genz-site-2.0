@@ -220,7 +220,7 @@ const [message, setMessage] = React.useState("");
                   Email Address
                 </h3>
                 <p>
-                  <a href="#">info@genztech.lk</a>
+                  <a href="#">info@genztechno.com</a>
                 </p>
               </div>
               <div>
