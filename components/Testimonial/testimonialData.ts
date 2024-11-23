@@ -9,15 +9,15 @@ export const testimonialData: Testimonial[] = [
     designation: "CEO @Nextvida",
     image: image1,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "GENZ Technologies helped us enhance our software solutions with their expertise and professionalism. Their ability to deliver high-quality, user-friendly systems on time was impressive. Highly recommend!",
   },
   {
     id: 2,
     name: "Wageesha Athukorala",
-    designation: "Founter @democompany",
+    designation: "Founder @GreenEarth",
     image: image2,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+      "GENZ Technologies developed an excellent app that simplified our energy management processes. Their attention to detail and commitment to delivering the best results made a huge difference. Great team to work with!",
   },
   // {
   //   id: 3,
