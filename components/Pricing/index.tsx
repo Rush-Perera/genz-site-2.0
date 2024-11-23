@@ -159,7 +159,7 @@ USD                </span>
                   Free Hosting(1Y)
                   </li>
                   <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
-                  Unlimited Pages
+                  30 Pages
                   </li>
                   <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
                   Free 10 Business Email Accounts
