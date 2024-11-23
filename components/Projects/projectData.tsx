@@ -1,6 +1,17 @@
 import { Blog } from "@/types/blog";
 
 const ProjectData: Blog[] = [
+  
+  {
+    _id: 2,
+    mainImage: "/images/projects/jeewa.png",
+    title: "POS System for Jeewa Plastics",
+    metadata:
+      "Custom POS system for Jeewa Plastics, a leading plastic products manufacturer in Sri Lanka. The system is designed to streamline sales operations and enhance customer service.",
+      status: "Completed",
+      link: "https://www.jeewaplastic.com",
+  },
+  
   {
     _id: 1,
     mainImage: "/images/projects/naturebin.png",
@@ -9,6 +20,15 @@ const ProjectData: Blog[] = [
       "An immersive online platform offering a vast collection of high-quality stock photos, Videos and Documents. Explore the beauty of nature through captivating visuals. ",
       status: "Completed",
       link: "https://naturebinsl.com",
+  },
+  {
+    _id: 1,
+    mainImage: "/images/projects/osma.png",
+    title: "Official Website of OSMA Engineering",
+    metadata:
+      "Osma Engineering Services (PVT) Ltd is a prominent and rapidly expanding construction company in Sri Lanka. Our scope of services encompasses both government and private construction projects, as well as consulting services.",
+      status: "Completed",
+      link: "https://www.osma.lk",
   },
   {
     _id: 2,
