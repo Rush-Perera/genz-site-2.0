@@ -13,11 +13,11 @@ export const metadata: Metadata = {
 export default function Packages() {
   return (
     <>
-      <div className="mt-6 pt-5">
+      <div className="mt-4 pt-4">
       <Pricing />
       
       </div>
-      <div className="mt-6 pt-5">
+      <div className="mt-4 pt-4">
       <Pricing2 />
       
       </div>
