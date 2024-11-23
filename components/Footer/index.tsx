@@ -56,7 +56,7 @@ const Footer = () => {
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  info@genztech.lk
+                  info@genztechno.com
                 </a>
               </motion.div>
 
