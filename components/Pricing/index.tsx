@@ -34,9 +34,9 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                290{" "}
+                49000{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
-USD
+LKR
                 </span>
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
@@ -88,9 +88,9 @@ USD
                 popular
               </div>
 
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">390{" "}
+              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">69000{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
-                  USD
+                  LKR
                 </span>
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
@@ -141,9 +141,9 @@ USD
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-590{" "}
+99000{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
-USD                </span>
+LKR                </span>
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
                 Platinum Package
@@ -162,7 +162,10 @@ USD                </span>
                   30 Pages
                   </li>
                   <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
-                  Free 10 Business Email Accounts
+                  30 Free Business Email Accounts
+                  </li>
+                  <li className="mb-4 text-black  last:mb-0 dark:text-manatee">
+                  Admin Panel
                   </li>
                 </ul>
               </div>

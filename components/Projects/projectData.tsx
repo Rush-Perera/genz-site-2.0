@@ -4,6 +4,15 @@ const ProjectData: Blog[] = [
   
   {
     _id: 2,
+    mainImage: "/images/projects/ictb.png",
+    title: "NEXTGEN ICT LMS",
+    metadata:
+      "NEXTGEN ICT LMS is a comprehensive learning management system designed for educational institutions. It offers a range of features to facilitate online learning and student management.",
+      status: "Completed",
+      link: "https://www.ictwithbrandon.lk",
+  },
+  {
+    _id: 2,
     mainImage: "/images/projects/jeewa.png",
     title: "POS System for Jeewa Plastics",
     metadata:

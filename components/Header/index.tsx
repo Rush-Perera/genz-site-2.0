@@ -163,7 +163,7 @@ const Header = () => {
             >
                 <FiPhone size={20} className="mr-2" /> {/* Add phone icon before the number */}
 
-              +94 717 030405
+              +94 717 030402
             </Link>
           </div>
         </div>

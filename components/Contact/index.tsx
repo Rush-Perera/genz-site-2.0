@@ -228,7 +228,7 @@ const [message, setMessage] = React.useState("");
                   Phone Number
                 </h4>
                 <p>
-                  <a href="#">+94 717 030405</a>
+                  <a href="#">+94 717 030402</a>
                 </p>
               </div>
             </motion.div>
