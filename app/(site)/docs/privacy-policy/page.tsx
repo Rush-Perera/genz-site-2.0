@@ -1,12 +1,10 @@
 import SidebarLink from "@/components/Docs/SidebarLink";
 import { Metadata } from "next";
-import { useRouter } from 'next/navigation'
-import { usePathname } from 'next/navigation'
 
 export const metadata: Metadata = {
   title: "Privacy Policy - GENZ Technologies",
-  description: "At GenZ Technologies, we are committed to protecting the privacy and security of our customers' personal information.This Privacy Policy outlines how we collect, use, and safeguard your information when you visit or make a purchase on our website. By using our website, you consent to the practices described in this policy.",
-  // other metadata
+  description:
+    "GENZ Technologies is committed to protecting the privacy and confidentiality of our clients’ information. This Privacy Policy explains how we collect, use, and safeguard your data when you interact with our website and services.",
 };
 
 export default function DocsPage() {
@@ -16,75 +14,147 @@ export default function DocsPage() {
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-1/4">
-              <div className="sticky top-[74px] rounded-lg border border-white p-4 shadow-solid-4  transition-all  dark:border-strokedark dark:bg-blacksection">
+              <div className="sticky top-[74px] rounded-lg border border-white p-4 shadow-solid-4 transition-all dark:border-strokedark dark:bg-blacksection">
                 <ul className="space-y-2">
-                <SidebarLink activeTab={2}/>
+                  <SidebarLink activeTab={2} />
                 </ul>
               </div>
             </div>
 
             <div className="w-full px-4 lg:w-3/4">
-            <div className="blog-details blog-details-docs shadow-three dark:bg-gray-dark rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]">
-  <h1>Privacy Policy</h1>
+              <div className="blog-details blog-details-docs shadow-three dark:bg-gray-dark rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]">
+                <h1>Privacy Policy</h1>
 
-  <p className="text-body-color dark:text-body-color-dark text-base">
-    At GenZ Technologies, we are committed to protecting the privacy and security of our customers' personal information.
-    This Privacy Policy outlines how we collect, use, and safeguard your information when you visit or make a purchase on our website.
-    By using our website, you consent to the practices described in this policy.
-  </p>
+                <p className="text-body-color dark:text-body-color-dark text-base">
+                  At GENZ Technologies (Pvt) Ltd, we are committed to protecting
+                  the privacy and confidentiality of our clients’ personal and
+                  business information. This Privacy Policy explains how we
+                  collect, use, and safeguard your data when you visit our
+                  website, communicate with us, or use our digital products and
+                  services. By using our website or services, you consent to the
+                  practices outlined below.
+                </p>
 
-  <h3 style={{ marginBottom: 4 }}>Information We Collect</h3>
-  <p>
-    When you visit our website, we may collect certain information about you, including:
-  </p>
-  <ul>
-    <li>Personal identification information (such as your name, email address, and phone number) provided voluntarily by you during the registration or checkout process.</li>
-    <li>Payment and billing information necessary to process your orders, including credit card details, which are securely handled by trusted third-party payment processors.</li>
-    <li>Browsing information, such as your IP address, browser type, and device information, collected automatically using cookies and similar technologies.</li>
-  </ul>
+                <h3 style={{ marginBottom: 4 }}>1. Information We Collect</h3>
+                <p>We collect information necessary to provide our services effectively, including:</p>
+                <ul>
+                  <li>
+                    <strong>Personal information:</strong> such as your name,
+                    email address, contact number, and company details submitted
+                    through forms, quotations, or registration processes.
+                  </li>
+                  <li>
+                    <strong>Billing and payment details:</strong> including
+                    transaction-related information processed securely through
+                    trusted third-party payment gateways.
+                  </li>
+                  <li>
+                    <strong>Project and communication data:</strong> information
+                    related to project discussions, requirements, and
+                    correspondences.
+                  </li>
+                  <li>
+                    <strong>Technical data:</strong> IP address, browser type,
+                    and usage data collected automatically through cookies and
+                    analytics tools to improve user experience.
+                  </li>
+                </ul>
 
-  <h5 style={{ marginBottom: 8 }}>Use of Information</h5>
-  <p>
-    We may use the collected information for the following purposes:
-  </p>
-  <ul>
-    <li>To process and fulfill your orders, including shipping and delivery.</li>
-    <li>To communicate with you regarding your purchases, provide customer support, and respond to inquiries or requests.</li>
-    <li>To personalize your shopping experience and present relevant product recommendations and promotions.</li>
-    <li>To improve our website, products, and services based on your feedback and browsing patterns.</li>
-    <li>To detect and prevent fraud, unauthorized activities, and abuse of our website.</li>
-  </ul>
+                <h3 style={{ marginBottom: 4 }}>2. How We Use Your Information</h3>
+                <p>GENZ Technologies uses collected data to:</p>
+                <ul>
+                  <li>Deliver and manage our software and IT services.</li>
+                  <li>Process payments and manage project billing.</li>
+                  <li>Communicate updates, technical notices, or support messages.</li>
+                  <li>Improve our website, digital platforms, and user experience.</li>
+                  <li>Comply with legal and financial recordkeeping obligations.</li>
+                </ul>
 
-  <h5 style={{ marginBottom: 8 }}>Information Sharing</h5>
-  <p>
-    We respect your privacy and do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except in the following circumstances:
-  </p>
-  <ul>
-    <li>Trusted service providers: We may share your information with third-party service providers who assist us in operating our website, processing payments, and delivering products. These providers are contractually obligated to handle your data securely and confidentially.</li>
-    <li>Legal requirements: We may disclose your information if required to do so by law or in response to valid legal requests or orders.</li>
-  </ul>
+                <h3 style={{ marginBottom: 4 }}>3. Information Sharing</h3>
+                <p>
+                  We respect your privacy and will not sell or rent your
+                  information to third parties. However, we may share your data
+                  with:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Trusted service providers:</strong> including
+                    hosting, payment processing, and analytics partners who
+                    assist in operating our business. These parties are bound by
+                    confidentiality and data protection agreements.
+                  </li>
+                  <li>
+                    <strong>Legal authorities:</strong> if required by law or
+                    for the protection of our rights, customers, or business.
+                  </li>
+                </ul>
 
-  <h5 style={{ marginBottom: 8 }}>Data Security</h5>
-  <p>
-    We implement industry-standard security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. However, please be aware that no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
-  </p>
+                <h3 style={{ marginBottom: 4 }}>4. Data Security</h3>
+                <p>
+                  We use appropriate administrative, technical, and physical
+                  safeguards to protect your information from unauthorized
+                  access, misuse, or disclosure. All sensitive payment data is
+                  encrypted and handled through secure third-party payment
+                  gateways. While we follow best practices, no online
+                  transmission is completely risk-free, and we cannot guarantee
+                  absolute security.
+                </p>
 
-  <h5 style={{ marginBottom: 8 }}>Cookies and Tracking Technologies</h5>
-  <p>
-    We use cookies and similar technologies to enhance your browsing experience, analyze website traffic, and gather information about your preferences and interactions with our website. You have the option to disable cookies through your browser settings, but this may limit certain features and functionality of our website.
-  </p>
+                <h3 style={{ marginBottom: 4 }}>5. Cookies and Analytics</h3>
+                <p>
+                  Our website uses cookies and similar technologies to analyze
+                  site traffic and improve functionality. You can modify your
+                  browser settings to disable cookies, though some features may
+                  not work as intended. We may also use analytics tools (e.g.,
+                  Google Analytics) to understand visitor behavior and improve
+                  services.
+                </p>
 
-  <h5 style={{ marginBottom: 8 }}>Changes to the Privacy Policy</h5>
-  <p>
-    We reserve the right to update or modify this Privacy Policy at any time. Any changes will be posted on this page with a revised "last updated" date. We encourage you to review this Privacy Policy periodically to stay informed about how we collect, use, and protect your information.
-  </p>
+                <h3 style={{ marginBottom: 4 }}>6. Data Retention</h3>
+                <p>
+                  We retain client and transaction data for as long as necessary
+                  to fulfill the purpose for which it was collected and to meet
+                  legal, tax, or accounting obligations. Generally, personal and
+                  project data is retained for up to <strong>5–7 years</strong>,
+                  after which it may be securely deleted or anonymized.
+                </p>
 
-  <h5 style={{ marginBottom: 8 }}>Contact Us</h5>
-  <p>
-    If you have any questions, concerns, or requests regarding our Privacy Policy or the handling of your personal information, please contact us using the information provided on our website.
-  </p>
-</div>
+                <h3 style={{ marginBottom: 4 }}>7. Customer Registration & Verification</h3>
+                <p>
+                  To use our services or make payments through our Internet
+                  Payment Gateway (IPG), clients must register an account with
+                  accurate details. We verify email and/or phone information and
+                  may request additional identification for high-value or
+                  recurring transactions. This ensures secure and authorized
+                  access for all clients.
+                </p>
 
+                <h3 style={{ marginBottom: 4 }}>8. Updates to This Policy</h3>
+                <p>
+                  We may update this Privacy Policy from time to time to reflect
+                  changes in technology, legal requirements, or our business
+                  practices. Updates will be posted on this page with a revised
+                  “Last Updated” date.
+                </p>
+
+                <h3 style={{ marginBottom: 4 }}>9. Contact Us</h3>
+                <p>
+                  For any questions or concerns about this Privacy Policy or how
+                  your information is handled, please contact us at:
+                </p>
+                <p>
+                  <strong>GENZ Technologies (Pvt) Ltd</strong> <br />
+                  Email: info@genztechno.com <br />
+                  Website: www.genztechno.com <br />
+                  Phone: +94 717 030402
+                </p>
+
+                <p className="mt-6">
+                  Your privacy is important to us, and we are committed to
+                  maintaining transparency and trust in all our digital
+                  interactions.
+                </p>
+              </div>
             </div>
           </div>
         </div>

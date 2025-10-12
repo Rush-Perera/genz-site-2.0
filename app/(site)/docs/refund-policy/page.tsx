@@ -1,12 +1,10 @@
 import SidebarLink from "@/components/Docs/SidebarLink";
 import { Metadata } from "next";
-import { useRouter } from 'next/navigation'
-import { usePathname } from 'next/navigation'
 
 export const metadata: Metadata = {
   title: "Refund Policy - GENZ Technologies",
-  description: "At GenZ Technologies, we are committed to protecting the privacy and security of our customers' personal information.This Privacy Policy outlines how we collect, use, and safeguard your information when you visit or make a purchase on our website. By using our website, you consent to the practices described in this policy.",
-  // other metadata
+  description:
+    "GENZ Technologies is committed to providing high-quality software development and IT services. This Refund Policy explains our procedures and conditions for handling refunds and disputes.",
 };
 
 export default function DocsPage() {
@@ -16,7 +14,7 @@ export default function DocsPage() {
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-1/4">
-              <div className="sticky top-[74px] rounded-lg border border-white p-4 shadow-solid-4  transition-all  dark:border-strokedark dark:bg-blacksection">
+              <div className="sticky top-[74px] rounded-lg border border-white p-4 shadow-solid-4 transition-all dark:border-strokedark dark:bg-blacksection">
                 <ul className="space-y-2">
                   <SidebarLink activeTab={3} />
                 </ul>
@@ -28,56 +26,85 @@ export default function DocsPage() {
                 <h1>Refund Policy</h1>
 
                 <p className="text-body-color dark:text-body-color-dark text-base">
-                  Thank you for shopping at GenZ Technologies. We value your satisfaction and strive to provide you with the best online shopping experience possible. If, for any reason, you are not completely satisfied with your purchase, we are here to help.
+                  At GENZ Technologies (Pvt) Ltd, we are committed to delivering
+                  reliable and high-quality software development, web, and IT
+                  services. This Refund Policy outlines our approach to handling
+                  refunds, cancellations, and disputes to ensure transparency
+                  and fairness for all clients.
                 </p>
 
-                <h3 style={{ marginBottom: 4 }}>Returns</h3>
+                <h3 style={{ marginBottom: 4 }}>1. Project-Based Services</h3>
                 <p>
-                  We accept returns within 3 days from the date of purchase. To be eligible for a return, your item must be unused and in the same condition that you received it. It must also be in the original packaging.
+                  For custom software development, website, or mobile app
+                  projects, refunds are considered only if the project has not
+                  yet reached the development phase or if GENZ Technologies
+                  fails to deliver the agreed scope of work as per the approved
+                  proposal. Any approved refund will be based on the portion of
+                  work completed at the time of the request.
                 </p>
 
-                <h5 style={{ marginBottom: 8 }}>Refunds</h5>
-                <p>
-                  Once we receive your return and inspect the item, we will notify you of the status of your refund. If your return is approved, we will initiate a refund to your original method of payment. Please note that the refund amount will exclude any shipping charges incurred during the initial purchase.
-                </p>
-
-                <h5 style={{ marginBottom: 8 }}>Exchanges</h5>
-                <p>
-                  If you would like to exchange your item for a different size, color, or style, please contact our customer support team within 3 days of receiving your order. We will provide you with further instructions on how to proceed with the exchange.
-                </p>
-
-                <h5 style={{ marginBottom: 8 }}>Non-Returnable Items</h5>
-                <p>
-                  Certain items are non-returnable and non-refundable. These include:
-                </p>
+                <h3 style={{ marginBottom: 4 }}>2. Non-Refundable Situations</h3>
                 <ul>
-                  <li>Gift cards</li>
-                  <li>Downloadable software products</li>
-                  <li>Personalized or custom-made items</li>
-                  <li>Perishable goods</li>
+                  <li>Once design, development, or deployment work has begun.</li>
+                  <li>For services already rendered or deliverables already approved by the client.</li>
+                  <li>For third-party costs such as domains, hosting, SSL, licenses, or API integrations.</li>
+                  <li>For delays caused by client-side feedback, content submission, or scope changes.</li>
                 </ul>
 
-                <h5 style={{ marginBottom: 8 }}>Damaged or Defective Items</h5>
+                <h3 style={{ marginBottom: 4 }}>3. Refund Request Process</h3>
                 <p>
-                  In the unfortunate event that your item arrives damaged or defective, please contact us immediately. We will arrange for a replacement or issue a refund, depending on your preference and product availability.
+                  Clients may submit a refund request in writing to our support
+                  team at <strong>support@genztechno.com</strong> with project
+                  details and reasons for dissatisfaction. Our team will review
+                  the request and respond within <strong>5–10 business days</strong>.
+                  If approved, refunds will be processed via the original payment
+                  method within <strong>10–15 business days</strong>, subject to
+                  bank or gateway timelines.
                 </p>
 
-                <h5 style={{ marginBottom: 8 }}>Return Shipping</h5>
+                <h3 style={{ marginBottom: 4 }}>4. Dispute Resolution</h3>
                 <p>
-                  You will be responsible for paying the shipping costs for returning your item unless the return is due to our error (e.g., wrong item shipped, defective product). In such cases, we will provide you with a prepaid shipping label.
+                  We encourage open communication and aim to resolve all
+                  concerns amicably. In case of disputes, clients can contact
+                  their project manager or escalate to the management team.
+                  Where resolution cannot be reached, mediation may be used as
+                  per the service agreement.
                 </p>
 
-                <h5 style={{ marginBottom: 8 }}>Processing Time</h5>
+                <h3 style={{ marginBottom: 4 }}>5. Recurring or Subscription Payments</h3>
                 <p>
-                  Refunds and exchanges will be processed within 3 business days after we receive your returned item. Please note that it may take additional time for the refund to appear in your account, depending on your payment provider.
+                  For clients using our payment gateway for recurring services
+                  such as maintenance or hosting, automatic payments are
+                  processed monthly or annually. Cancellations must be requested
+                  at least <strong>7 days before</strong> the next billing date.
+                  Refunds are not applicable once a billing cycle has been processed.
                 </p>
 
-                <h5 style={{ marginBottom: 8 }}>Contact Us</h5>
+                <h3 style={{ marginBottom: 4 }}>6. Exceptional Circumstances</h3>
                 <p>
-                  If you have any questions or concerns regarding our refund policy, please contact our customer support team. We are here to assist you and ensure your shopping experience with us is enjoyable and hassle-free.
+                  In rare cases of technical errors, double payments, or
+                  unauthorized charges, refunds will be processed after
+                  verification with our payment provider. Clients must notify us
+                  within <strong>7 days</strong> of such issues.
+                </p>
+
+                <h3 style={{ marginBottom: 4 }}>7. Contact Us</h3>
+                <p>
+                  For any queries regarding this Refund Policy or your
+                  transaction, please contact our support team at:
+                </p>
+                <p>
+                  <strong>GENZ Technologies (Pvt) Ltd</strong> <br />
+                  Email: info@genztechno.com <br />
+                  Website: www.genztechno.com <br />
+                  Phone: +94 717 030402
+                </p>
+
+                <p className="mt-6">
+                  We value our clients’ trust and are committed to handling all
+                  financial matters transparently and responsibly.
                 </p>
               </div>
-
             </div>
           </div>
         </div>
