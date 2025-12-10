@@ -56,7 +56,7 @@ const Checkout = () => {
       // 2. Create a form dynamically and submit it
       const payhereForm = document.createElement("form");
       payhereForm.method = "POST";
-      payhereForm.action = "https://sandbox.payhere.lk/pay/checkout"; // Use sandbox for testing
+      payhereForm.action = "https://payhere.lk/pay/checkout"; // Use sandbox for testing
 
       const fields = {
         merchant_id: data.merchant_id, // Use merchant_id from API
