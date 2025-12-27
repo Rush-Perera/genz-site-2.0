@@ -13,9 +13,23 @@ const CheckoutCancelPage = () => {
         <h2 className="mb-4 text-3xl font-bold text-black dark:text-white">
           Payment Cancelled
         </h2>
-        <p className="text-lg text-body-color">
+        <p className="text-lg text-body-color mb-8">
           Your payment was cancelled. No charges were made.
         </p>
+        <div className="flex justify-center gap-4">
+            <a
+              href="/checkout"
+              className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
+            >
+              Try Again
+            </a>
+            <a
+              href="/"
+              className="inline-flex items-center justify-center rounded-full bg-black px-7 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10 dark:bg-white dark:text-black"
+            >
+              Back to Home
+            </a>
+        </div>
       </div>
     </section>
   );
