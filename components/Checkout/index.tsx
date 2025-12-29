@@ -33,65 +33,35 @@ const Checkout = () => {
   const handlePayment = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const order_id = "Order_" + new Date().getTime();
+    // Create a form dynamically and submit it to our own API
+    // The API will handle the hash generation and redirect to PayHere
+    const form = document.createElement("form");
+    form.method = "POST";
+    form.action = "/api/checkout";
 
-    try {
-      // 1. Get Hash from API
-      const response = await fetch("/api/payhere-hash", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          order_id,
-          amount,
-          currency,
-        }),
-      });
+    const fields = {
+      items,
+      currency,
+      amount,
+      first_name: formData.first_name,
+      last_name: formData.last_name,
+      email: formData.email,
+      phone: formData.phone,
+      address: formData.address,
+      city: formData.city,
+      country: formData.country,
+    };
 
-      const data = await response.json();
-      if (!data.hash) {
-        alert("Failed to initialize payment. Please check configuration.");
-        return;
-      }
-
-      // 2. Create a form dynamically and submit it
-      const payhereForm = document.createElement("form");
-      payhereForm.method = "POST";
-      payhereForm.action = "https://www.payhere.lk/pay/checkout"; // Use sandbox for testing
-
-      const fields = {
-        merchant_id: data.merchant_id, // Use merchant_id from API
-        return_url: window.location.origin + "/checkout/success",
-        cancel_url: window.location.origin + "/checkout/cancel",
-        notify_url: window.location.origin + "/api/payhere-notify",
-        order_id,
-        items,
-        currency,
-        amount,
-        first_name: formData.first_name,
-        last_name: formData.last_name,
-        email: formData.email,
-        phone: formData.phone,
-        address: formData.address,
-        city: formData.city,
-        country: formData.country,
-        hash: data.hash,
-      };
-
-      for (const key in fields) {
-        const input = document.createElement("input");
-        input.type = "hidden";
-        input.name = key;
-        input.value = fields[key as keyof typeof fields];
-        payhereForm.appendChild(input);
-      }
-
-      document.body.appendChild(payhereForm);
-      payhereForm.submit();
-
-    } catch (error) {
-      console.error("Payment Error:", error);
-      alert("An error occurred while processing payment.");
+    for (const key in fields) {
+      const input = document.createElement("input");
+      input.type = "hidden";
+      input.name = key;
+      input.value = fields[key as keyof typeof fields];
+      form.appendChild(input);
     }
+
+    document.body.appendChild(form);
+    form.submit();
   };
 
   return (
