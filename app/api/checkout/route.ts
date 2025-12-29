@@ -8,9 +8,11 @@ export async function POST(req: Request) {
 
     if (contentType.includes('application/json')) {
       body = await req.json();
-    } else {
+    } else if (contentType.includes('application/x-www-form-urlencoded') || contentType.includes('multipart/form-data')) {
       const formData = await req.formData();
       body = Object.fromEntries(formData);
+    } else {
+      return NextResponse.json({ error: 'Invalid Content-Type. Please use application/json or application/x-www-form-urlencoded' }, { status: 400 });
     }
 
     const { 
