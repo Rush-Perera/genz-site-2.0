@@ -52,7 +52,7 @@ export async function POST(req: Request) {
     
     // Use NEXT_PUBLIC_BASE_URL if available, otherwise fallback to localhost for development
     // IMPORTANT: When deploying, make sure NEXT_PUBLIC_BASE_URL is set to your production domain (e.g. https://genztechno.com)
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'; 
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://genztechno.com'; 
 
     if (!merchantId || !merchantSecret) {
       return NextResponse.json({ error: 'Server misconfigured: Missing PayHere credentials' }, { status: 500 });
