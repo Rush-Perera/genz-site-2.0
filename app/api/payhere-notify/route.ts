@@ -24,11 +24,27 @@ export async function POST(req: Request) {
 
     if (localMd5sig === md5sig && status_code === '2') {
         // Payment Success
-        // TODO: Update your database here
         console.log(`Payment successful for order ${order_id}`);
+        
+        // TODO: Update your database here
+        // Example: await db.orders.update({ where: { id: order_id }, data: { status: 'COMPLETED' } });
+
+    } else if (status_code === '0') {
+        // Payment Pending
+        console.log(`Payment pending for order ${order_id}`);
+    } else if (status_code === '-1') {
+        // Payment Canceled
+        console.log(`Payment canceled for order ${order_id}`);
+    } else if (status_code === '-2') {
+        // Payment Failed
+        console.log(`Payment failed for order ${order_id}`);
+    } else if (status_code === '-3') {
+        // Chargedback
+        console.log(`Payment chargedback for order ${order_id}`);
     } else {
-        // Payment Failed or Verification Failed
+        // Verification Failed
         console.log(`Payment verification failed for order ${order_id}`);
+        return new NextResponse(null, { status: 400 });
     }
 
     return new NextResponse(null, { status: 200 });
