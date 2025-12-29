@@ -11,45 +11,55 @@ export async function POST(req: Request) {
     const status_code = formData.get('status_code');
     const md5sig = formData.get('md5sig');
 
-    const merchantSecret = process.env.PAYHERE_MERCHANT_SECRET;
+    console.log('PayHere Notification received:', {
+      merchant_id,
+      order_id,
+      payhere_amount,
+      payhere_currency,
+      status_code,
+    });
 
-    if (!merchantSecret) {
-        return NextResponse.json({ error: 'Server misconfigured' }, { status: 500 });
+    // Forward the notification to openmarketx.com
+    const forwardUrl = 'https://openmarketx.com/checkout/notify';
+    
+    const forwardFormData = new URLSearchParams();
+    forwardFormData.append('merchant_id', String(merchant_id || ''));
+    forwardFormData.append('order_id', String(order_id || ''));
+    forwardFormData.append('payhere_amount', String(payhere_amount || ''));
+    forwardFormData.append('payhere_currency', String(payhere_currency || ''));
+    forwardFormData.append('status_code', String(status_code || ''));
+    forwardFormData.append('md5sig', String(md5sig || ''));
+    
+    // Include any additional fields from PayHere
+    formData.forEach((value, key) => {
+      if (!['merchant_id', 'order_id', 'payhere_amount', 'payhere_currency', 'status_code', 'md5sig'].includes(key)) {
+        forwardFormData.append(key, String(value));
+      }
+    });
+
+    console.log('Forwarding notification to:', forwardUrl);
+
+    const forwardResponse = await fetch(forwardUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: forwardFormData.toString(),
+    });
+
+    const responseText = await forwardResponse.text();
+    console.log('Forward response status:', forwardResponse.status);
+    console.log('Forward response body:', responseText);
+
+    if (!forwardResponse.ok) {
+      console.error('Failed to forward notification to openmarketx.com');
     }
 
-    // Verify the hash
-    const hashedSecret = crypto.createHash('md5').update(merchantSecret).digest('hex').toUpperCase();
-    const hashString = `${merchant_id}${order_id}${payhere_amount}${payhere_currency}${status_code}${hashedSecret}`;
-    const localMd5sig = crypto.createHash('md5').update(hashString).digest('hex').toUpperCase();
-
-    if (localMd5sig === md5sig && status_code === '2') {
-        // Payment Success
-        console.log(`Payment successful for order ${order_id}`);
-        
-        // TODO: Update your database here
-        // Example: await db.orders.update({ where: { id: order_id }, data: { status: 'COMPLETED' } });
-
-    } else if (status_code === '0') {
-        // Payment Pending
-        console.log(`Payment pending for order ${order_id}`);
-    } else if (status_code === '-1') {
-        // Payment Canceled
-        console.log(`Payment canceled for order ${order_id}`);
-    } else if (status_code === '-2') {
-        // Payment Failed
-        console.log(`Payment failed for order ${order_id}`);
-    } else if (status_code === '-3') {
-        // Chargedback
-        console.log(`Payment chargedback for order ${order_id}`);
-    } else {
-        // Verification Failed
-        console.log(`Payment verification failed for order ${order_id}`);
-        return new NextResponse(null, { status: 400 });
-    }
-
+    // Always return 200 to PayHere to acknowledge receipt
     return new NextResponse(null, { status: 200 });
   } catch (error) {
     console.error('Error processing notification:', error);
-    return new NextResponse(null, { status: 500 });
+    // Still return 200 to prevent PayHere from retrying excessively
+    return new NextResponse(null, { status: 200 });
   }
 }
