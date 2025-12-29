@@ -91,10 +91,16 @@ export async function POST(req: Request) {
 
     const payhereUrl = 'https://www.payhere.lk/pay/checkout';
 
-    // 5. Return JSON or HTML based on response_format
+    // 5. Return based on response_format
     if (response_format === 'json') {
-      // Return JSON with action URL and params for proxy/API consumers
+      // Return JSON with redirect URL - the proxy should redirect the user to this URL
+      // This URL is on genztechno.com domain, which will then submit to PayHere
+      const queryParams = new URLSearchParams(payhereParams as Record<string, string>).toString();
+      const redirectUrl = `${baseUrl}/checkout/redirect?${queryParams}`;
+      
       return NextResponse.json({
+        redirect_url: redirectUrl,
+        // Keep these for backward compatibility if needed
         action_url: payhereUrl,
         params: payhereParams
       });
