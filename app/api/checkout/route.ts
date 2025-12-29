@@ -89,7 +89,7 @@ export async function POST(req: Request) {
 
     console.log('PayHere Params:', payhereParams); // Debug log to check URLs
 
-    const payhereUrl = 'https://www.payhere.lk/pay/checkout';
+    const payhereUrl = 'https://sandbox.payhere.lk/pay/checkout';
 
     // 5. Return based on response_format
     if (response_format === 'json') {
