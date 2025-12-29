@@ -63,11 +63,21 @@ export async function POST(req: Request) {
     const hashString = `${merchantId}${order_id}${formattedAmount}${currency}${hashedSecret}`;
     const hash = crypto.createHash('md5').update(hashString).digest('hex').toUpperCase();
 
+    // Helper function to append order_id to URL (handles existing query params)
+    const appendOrderId = (url: string, orderId: string) => {
+      const separator = url.includes('?') ? '&' : '?';
+      return `${url}${separator}order_id=${orderId}`;
+    };
+
     // 4. Prepare PayHere data - use custom URLs if provided, otherwise use defaults
+    // Append order_id to return/cancel URLs so we can identify the order on redirect
+    const returnUrl = appendOrderId(custom_return_url || `${baseUrl}/checkout/success`, order_id);
+    const cancelUrl = appendOrderId(custom_cancel_url || `${baseUrl}/checkout/cancel`, order_id);
+
     const payhereParams: Record<string, string> = {
       merchant_id: merchantId,
-      return_url: custom_return_url || `${baseUrl}/checkout/success`,
-      cancel_url: custom_cancel_url || `${baseUrl}/checkout/cancel`,
+      return_url: returnUrl,
+      cancel_url: cancelUrl,
       notify_url: custom_notify_url || `${baseUrl}/api/payhere-notify`,
       order_id,
       items: items || 'Order Payment',
